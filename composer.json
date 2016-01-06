@@ -1,6 +1,7 @@
 {
 	"name":"tylerjuniorcollege/slim-user-middleware",
 	"description":"Simple, basic, User Middleware for Slim Framework. Includes route login middleware.",
+	"license":"MIT",
 	"require":{
 		"slim/slim": "2.*"
 	},
