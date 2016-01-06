@@ -17,7 +17,7 @@ class LoginMiddleware extends \Slim\Middleware
 
 		$login_redirect = (is_null($this->app->config('tjc.middleware.login.redirect')) ? '/' : $this->app->config('tjc.middleware.login.redirect'));
 
-		$logged_out_message = $login_redirect = (is_null($this->app->config('tjc.middleware.login.message')) ? 'You Must Be Logged In to Access That.' : $this->app->config('tjc.middleware.login.message'));
+		$logged_out_message = (is_null($this->app->config('tjc.middleware.login.message')) ? 'You Must Be Logged In to Access That.' : $this->app->config('tjc.middleware.login.message'));
 
 		$app = $this->app;
 
