@@ -6,7 +6,7 @@
 	},
 	"autoload":{
 		"psr-4":{
-			"TJC\\User":"src/"
+			"TJC\\User\\":"src/"
 		},
 		"files":["src/RouteMiddleware.php"]
 	}
