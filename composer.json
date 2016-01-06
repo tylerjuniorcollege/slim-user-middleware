@@ -1,0 +1,13 @@
+{
+	"name":"tylerjuniorcollege/slim-user-middleware",
+	"description":"Simple, basic, User Middleware for Slim Framework. Includes route login middleware.",
+	"require":{
+		"slim/slim": "2.*"
+	},
+	"autoload":{
+		"psr-4":{
+			"TJC\\User":"src/"
+		},
+		"files":["src/RouteMiddleware.php"]
+	}
+}
