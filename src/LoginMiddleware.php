@@ -21,7 +21,7 @@ class LoginMiddleware extends \Slim\Middleware
 
 		$app = $this->app;
 
-		$this->app->hook('before.slim.dispatch', function() use($app, $user_singleton, $login_config, $login_redirect, $logged_out_message) {
+		$this->app->hook('slim.before.dispatch', function() use($app, $user_singleton, $login_config, $login_redirect, $logged_out_message) {
 			$route_login = $app->config($login_config);
 			if(!is_null($route_login)) { // This should be set to true if the function was called.
 				if($app->$user_singleton === FALSE) { // We should flash a message and halt the application.
