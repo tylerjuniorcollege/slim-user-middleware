@@ -10,7 +10,7 @@ class UserMiddleware extends \Slim\Middleware
 {
 	public function call() {
 		// Getting the singleton name:
-		$singleton_name = (is_null($app->config('tjc.middleware.user')) ? 'user' : $app->config('tjc.middleware.user'));
+		$singleton_name = (is_null($this->app->config('tjc.middleware.user')) ? 'user' : $this->app->config('tjc.middleware.user'));
 
 		// Creating user singleton.
 		$this->app->container->singleton($singleton_name, function() use($singleton_name) {
